@@ -37,11 +37,6 @@ body {
     font-family: regularFont, 'Courier New', Courier, monospace;
 }
 
-img {
-    width: 1rem;
-    height: auto;
-}
-
 .container {
     display: grid;
     grid-template-columns: 1fr 3.5fr;
@@ -310,4 +305,8 @@ main>.trending>.profiles {
 .profile h6 {
     font-size: var(--font-4);
     margin: 0;
+}
+
+img:hover {
+    transform: scale(1.1);
 }
