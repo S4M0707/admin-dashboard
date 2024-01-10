@@ -1,0 +1,71 @@
+@font-face {
+    font-family: regularFont;
+    src: url(./fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: boldFont;
+    src: url(./fonts/Montserrat-Bold.ttf);
+}
+
+:root {
+    --color-50: #faf5ff;
+    --color-100: #f3e8ff ;
+    --color-200: #e9d5ff;
+    --color-300: #d8b4fe;
+    --color-400: #c084fc;
+    --color-500: #a855f7;
+    --color-600: #9333ea;
+    --color-700: #7e22ce;
+    --color-800: #6b21a8;
+    --color-900: #581c87;
+    --color-950: #3b0764;
+
+    --padding: 1.5vw;
+}
+
+body {
+    background-color: var(--color-50);
+    color: var(--color-950);
+    margin: 0;
+    font-family: regularFont, 'Courier New', Courier, monospace;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3.5fr;
+    grid-template-rows: 1fr 5fr;
+}
+
+.sidebar {
+    grid-row: 1 / 3;
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--color-700);
+    color: var(--color-50);
+    padding: var(--padding);
+}
+
+.sidebar>div {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+}
+
+.sidebar>div img {
+    font-size: 1.5rem;
+}
+
+header {
+    grid-row: 1 / 2;
+}
+
+main {
+    grid-row: 2 / 3;
+}
+
+img {
+    width: 1rem;
+    height: auto;
+}
